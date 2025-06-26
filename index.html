@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انفوجرافيك: دليلك الشامل لتأسيس وكالة دعاية وإعلان ناجحة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+                max-height: 60vh;
+            }
+        }
+        .flowchart-step {
+            min-height: 120px;
+        }
+        .flowchart-arrow {
+            color: #58508d;
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+        .hiring-process-step {
+            min-height: 100px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .hiring-process-step:hover {
+            transform: translateY(-5px);
+        }
+        .sub-department-role {
+            @apply bg-gray-50 p-3 rounded-lg shadow-sm mb-2 border-l-4 border-gray-200 flex items-center;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .sub-department-role:hover {
+            background-color: #e2e8f0;
+        }
+        .sub-department-title {
+            @apply font-semibold text-lg text-[#003f5c] mb-2;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-gradient-to-l from-[#003f5c] to-[#58508d] text-white text-center py-16 px-4">
+        <p class="text-md md:text-lg mb-2">من عند: <span class="font-bold">ehabgm online services</span></p>
+        <p class="text-md md:text-lg mb-4">لـِ: <span class="font-bold">المحيط الذهبي</span></p>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4">دليلك يا حجي: كيف تعمل وكالة إعلانات ناجحة</h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto">صورة بتشرحلك كل صغيرة وكبيرة عن عالم الدعاية والإعلان، من الفكرة لأول إعلان بتعمله.</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="structure" class="my-12">
+            <h2 class="text-3xl font-bold text-center mb-2 text-[#003f5c]">1. وكالة الإعلانات: مين بيشتغل إيش؟</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-600">أي وكالة إعلانات ناجحة بتكون زي الساعة، كل قطعة فيها بتكمل التانية. فيها أقسام مختصة، كل قسم إله شغلة مهمة عشان يرضوا الزباين. لما تفهم هالهيكل، بتعرف كيف تبني فريق شغل بيفهم على بعضه وبيقدم أحسن شغل.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#003f5c]">
+                    <h3 class="font-bold text-xl mb-3">إدارة الزباين</h3>
+                    <p class="text-gray-600">هدول هم الواجهة بين الزبون والوكالة. شغلهم يبنوا علاقات قوية مع الزباين، يفهموا إيش بدهم بالزبط، ويضمنوا إنهم يكونوا مبسوطين على الآخر.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <h4 class="sub-department-title">الشغلات الجانبية:</h4>
+                        <div class="sub-department-role"><span class="text-xl ml-2">💼</span> مدير زباين</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">🤝</span> منسق زباين</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#58508d]">
+                    <h3 class="font-bold text-xl mb-3">التخطيط الكبير</h3>
+                    <p class="text-gray-600">هدول هم المدبرين. بيحللوا السوق والمنافسين وبيرتبوا الخطط اللي بتخلي الإعلان يوصل صح وبقوة.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <h4 class="sub-department-title">الشغلات الجانبية:</h4>
+                        <div class="sub-department-role"><span class="text-xl ml-2">📈</span> مخطط كبير</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">📊</span> محلل أرقام سوقية</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#bc5090]">
+                    <h3 class="font-bold text-xl mb-3">قسم الإبداع</h3>
+                    <p class="text-gray-600">هادا قلب الوكالة النابض. بياخدوا الخطط وبيحولوها لأفكار إبداعية، كلام حلو ومؤثر، وتصاميم بتشد العين.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <h4 class="sub-department-title">الشغلات الجانبية:</h4>
+                        <div class="sub-department-role"><span class="text-xl ml-2">💡</span> مدير إبداع</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">✍️</span> اللي بيكتب الإعلانات</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">🎨</span> اللي بيرتب الفكرة البصرية</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">🖥️</span> رسام الكمبيوتر</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">🎬</span> رسام حركات/أفلام كرتون</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#ff6361]">
+                    <h3 class="font-bold text-xl mb-3">تخطيط وشراء مساحات الإعلان</h3>
+                    <p class="text-gray-600">هدول بتأكدوا إنه الإعلان يوصل للناس الصح بالوقت الصح وعلى القنوات المظبوطة وبأقل تكلفة.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <h4 class="sub-department-title">الشغلات الجانبية:</h4>
+                        <div class="sub-department-role"><span class="text-xl ml-2">🗺️</span> مخطط قنوات الإعلان</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">💰</span> اللي بيشتري مساحات الإعلان</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">💻</span> محلل إعلانات الإنترنت</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#ffa600]">
+                    <h3 class="font-bold text-xl mb-3">الإنتاج وإدارة المشاريع</h3>
+                    <p class="text-gray-600">هدول بيحولوا الأفكار لحقيقة ملموسة، وبيظبطوا الشغل عشان يتسلم بجودة عالية وبالوقت المحدد.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <h4 class="sub-department-title">الشغلات الجانبية:</h4>
+                        <div class="sub-department-role"><span class="text-xl ml-2">⏱️</span> مدير مشروع</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">⚙️</span> منسق شغل</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">🎥</span> مخرج (للفيديوهات)</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">📸</span> مصور/فيديو</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-400">
+                    <h3 class="font-bold text-xl mb-3">الأبحاث والمساعدة</h3>
+                    <p class="text-gray-600">هدول بيوفروا الأرقام والمعلومات اللازمة عشان تاخد القرارات الصح، وكمان بيديروا المصاري والموظفين عشان الوكالة تضلها قايمة.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <h4 class="sub-department-title">الشغلات الجانبية:</h4>
+                        <div class="sub-department-role"><span class="text-xl ml-2">🔬</span> باحث سوق</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">📈</span> محلل أبحاث</div>
+                        <h4 class="sub-department-title mt-4">الشغل الإداري:</h4>
+                        <div class="sub-department-role"><span class="text-xl ml-2">💲</span> محاسب</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">👤</span> مسؤول موظفين</div>
+                        <div class="sub-department-role"><span class="text-xl ml-2">✍️</span> مسؤول إداري</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="my-12 py-12 bg-gray-100 rounded-xl">
+            <h2 class="text-3xl font-bold text-center mb-2 text-[#003f5c]">2. كيف تبدأ شركتك بمصر؟</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-600">مش بس الفكرة الحلوة هي اللي بتعمل شركة، فيه خطوات قانونية ومصاريف لازم تنتبه عليها. هاد ملخص لأهم الشغلات اللي لازم تعرفها.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="px-4">
+                    <h3 class="font-bold text-2xl mb-4 text-[#58508d]">خطوات البدء الرئيسية</h3>
+                    <ol class="list-decimal list-inside space-y-3 text-lg">
+                        <li>ادرس السوق وشوف إيش الخدمات اللي بدك تقدمها.</li>
+                        <li>اعمل خطة شغل مرتبة وكاملة.</li>
+                        <li>اختار نوع الشركة اللي بدك تعملها (شركة ذات مسؤولية محدودة هي الأكثر شهرة).</li>
+                        <li>جهز كل الأوراق المطلوبة (عقد الشركة، سجل تجاري، بطاقة ضريبية).</li>
+                        <li>خد كل التراخيص اللازمة عشان تبدأ الشغل.</li>
+                        <li>جهز مكان الشغل بكل العدة اللازمة.</li>
+                    </ol>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="font-bold text-xl text-center mb-3">قديش بدك رأس مال (لشركة محدودة)</h3>
+                    <p class="text-center text-sm mb-4 text-gray-500">المصادر بتختلف كثير، عشان هيك لازم تسأل محامي أو خبير قانوني عشان تعرف الصح.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="capitalChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="team" class="my-12">
+            <h2 class="text-3xl font-bold text-center mb-2 text-[#003f5c]">3. فريق الأحلام: مين بيعمل إيش وإيش لازم يكون بيعرف؟</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-600">الناس الشاطرة هي أغلى شي بالوكالة. كل واحد في الفريق إله مهارات خاصة فيه بتخلي الشغل كله يمشي صح. هالرسومات بتوريك إيش المهارات اللي لازم تكون عند كل واحد في الشغل الأساسي.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <h3 class="font-bold text-xl mb-3">مدير الإبداع</h3>
+                    <div class="chart-container h-64">
+                        <canvas id="creativeDirectorChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <h3 class="font-bold text-xl mb-3">مسؤول الزباين</h3>
+                     <div class="chart-container h-64">
+                        <canvas id="accountManagerChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <h3 class="font-bold text-xl mb-3">خبير تسويق الإنترنت</h3>
+                     <div class="chart-container h-64">
+                        <canvas id="digitalMarketerChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div id="staffing-levels" class="my-12 py-12 bg-gray-100 rounded-xl">
+                <h3 class="text-3xl font-bold text-center mb-2 text-[#ffa600]">عدد الموظفين المتوقع: من البداية للتوسع</h3>
+                <p class="text-center max-w-3xl mx-auto mb-10 text-gray-600">عدد الموظفين بيعتمد كثير على قديش حجم الوكالة، وقديش عندها شغل وزباين. هون بنوريك إيش العدد المتوقع للموظفين لوكالة صغيرة لسا بتبدأ، ووكالة حجمها متوسط:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#ff6361]">
+                        <h4 class="font-bold text-2xl mb-4 text-[#ff6361] text-center">وكالة صغيرة / لسا بتبدأ (5-10 موظفين)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                            <li><span class="font-bold">المؤسس/المدير العام:</span> 1 (بيعمل أكثر من شغلة زي إدارة الزباين والتخطيط بالبداية)</li>
+                            <li><span class="font-bold">فريق الإبداع:</span> 2-3 (مدير إبداع، رسام كمبيوتر، اللي بيكتب الإعلانات)</li>
+                            <li><span class="font-bold">فريق تسويق ديجيتال/إعلانات:</span> 1-2 (أخصائي تسويق على النت، بيخطط وبيشتري مساحات الإعلان)</li>
+                            <li><span class="font-bold">مساعد إداري/مالي:</span> 1 (مساعد إداري/محاسب)</li>
+                        </ul>
+                        <p class="mt-4 text-sm text-gray-500 text-center">بهالمرحلة، ممكن الموظف الواحد يعمل أكثر من شغلة عشان يوفروا مصاري.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#58508d]">
+                        <h4 class="font-bold text-2xl mb-4 text-[#58508d] text-center">وكالة متوسطة (20-50 موظفًا)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                            <li><span class="font-bold">الإدارة الكبيرة:</span> 2-3 (مدير عام، مدير شغل، مدير مصاري)</li>
+                            <li><span class="font-bold">مدراء الأقسام:</span> 5-7 (لكل قسم من أقسام الزباين، الإبداع، التخطيط، الإعلانات، الإنتاج، تسويق النت، الموظفين)</li>
+                            <li><span class="font-bold">فرق مختصة:</span> 10-30 (مسؤولين زباين، رسامين، اللي بيكتب الإعلانات، محللين، أخصائيين تسويق النت، وغيرهم)</li>
+                            <li><span class="font-bold">فريق مساعدة:</span> 3-5 (محاسبين، مختصين موظفين، إداريين)</li>
+                        </ul>
+                        <p class="mt-4 text-sm text-gray-500 text-center">هون بصير التخصص إشي ضروري عشان الشغل يكون أحسن وذو جودة أعلى مع نمو الشغل والزباين.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiring-structure" class="my-12 py-12 bg-gray-100 rounded-xl">
+                <h3 class="text-3xl font-bold text-center mb-2 text-[#58508d]">كيف بتجيب الموظفين: من احتياجك للتعيين</h3>
+                <p class="text-center max-w-3xl mx-auto mb-10 text-gray-600">عشان تجيب أحسن الناس للشغل، لازم تمشي على طريقة توظيف مرتبة ومزبوطة. هدول هن الخطوات الأساسية.</p>
+                <div class="flex flex-col items-center justify-center space-y-4 md:space-y-0 md:flex-row md:flex-wrap md:gap-4">
+                    <div class="hiring-process-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-full md:w-56 border-b-4 border-[#003f5c]">
+                        <span class="text-4xl text-[#003f5c]">🔍</span>
+                        <strong class="mt-2 text-lg">1. تعرف إيش بدك</strong>
+                        <p class="text-sm text-gray-500">تحلل إيش الشغل المطلوب بالزبط.</p>
+                    </div>
+                    <span class="flowchart-arrow">←</span>
+                    <div class="hiring-process-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-full md:w-56 border-b-4 border-[#58508d]">
+                        <span class="text-4xl text-[#58508d]">📣</span>
+                        <strong class="mt-2 text-lg">2. تدور على الناس</strong>
+                        <p class="text-sm text-gray-500">تنشر إعلانات الشغل وتجيب اللي بيفهموا.</p>
+                    </div>
+                    <span class="flowchart-arrow">←</span>
+                    <div class="hiring-process-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-full md:w-56 border-b-4 border-[#bc5090]">
+                        <span class="text-4xl text-[#bc5090]">📄</span>
+                        <strong class="mt-2 text-lg">3. تفرز الطلبات</strong>
+                        <p class="text-sm text-gray-500">تطلع على السير الذاتية بالبداية.</p>
+                    </div>
+                    <span class="flowchart-arrow">←</span>
+                    <div class="hiring-process-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-full md:w-56 border-b-4 border-[#ff6361]">
+                        <span class="text-4xl text-[#ff6361]">🗣️</span>
+                        <strong class="mt-2 text-lg">4. تقابلهم</strong>
+                        <p class="text-sm text-gray-500">تحكي معهم وتشوف كيف أفكارهم وشخصيتهم.</p>
+                    </div>
+                    <span class="flowchart-arrow">←</span>
+                    <div class="hiring-process-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-full md:w-56 border-b-4 border-[#ffa600]">
+                        <span class="text-4xl text-[#ffa600]">✅</span>
+                        <strong class="mt-2 text-lg">5. تختبرهم</strong>
+                        <p class="text-sm text-gray-500">تختبرهم وتشوف قديش بيعرفوا يشتغلوا.</p>
+                    </div>
+                    <span class="flowchart-arrow">←</span>
+                    <div class="hiring-process-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-full md:w-56 border-b-4 border-[#003f5c]">
+                        <span class="text-4xl text-[#003f5c]">📞</span>
+                        <strong class="mt-2 text-lg">6. تسأل عنهم</strong>
+                        <p class="text-sm text-gray-500">تتأكد من شغلهم القديم ومن الناس اللي اشتغلوا معهم.</p>
+                    </div>
+                    <span class="flowchart-arrow">←</span>
+                    <div class="hiring-process-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-full md:w-56 border-b-4 border-[#58508d]">
+                        <span class="text-4xl text-[#58508d]">✉️</span>
+                        <strong class="mt-2 text-lg">7. تعرض عليهم الشغل</strong>
+                        <p class="text-sm text-gray-500">تقدم عرض رسمي بالوظيفة.</p>
+                    </div>
+                    <span class="flowchart-arrow">←</span>
+                    <div class="hiring-process-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-full md:w-56 border-b-4 border-[#bc5090]">
+                        <span class="text-4xl text-[#bc5090]">🤝</span>
+                        <strong class="mt-2 text-lg">8. تشغلهم وتوجههم</strong>
+                        <p class="text-sm text-gray-500">تبدأ معهم إجراءات التعيين وتعلمهم إيش المطلوب.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="my-12 py-12 bg-gray-100 rounded-xl">
+            <h2 class="text-3xl font-bold text-center mb-2 text-[#003f5c]">4. عدة الشغل: أجهزة الكمبيوتر والبرامج</h2>
+             <p class="text-center max-w-3xl mx-auto mb-10 text-gray-600">التكنولوجيا هي اللي بتمشي الشغل وبتخليه أحسن. إنك تصرف على العدة والبرامج الصح مش بس رفاهية، لأ، هاد إشي ضروري عشان تنافس وتنجح بهاد الوقت اللي كله تكنولوجيا.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="font-bold text-xl text-center mb-3">أنواع البرامج الأساسية</h3>
+                    <p class="text-center text-sm mb-4 text-gray-500">حجم النقطة بوريك قديش أهمية البرنامج للوكالة.</p>
+                    <div class="chart-container h-96">
+                         <canvas id="softwareBubbleChart"></canvas>
+                    </div>
+                </div>
+                <div class="px-4">
+                     <h3 class="font-bold text-2xl mb-4 text-[#58508d]">العدة والأجهزة الضرورية</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-lg"><span class="text-2xl ml-3">💻</span> <div><strong>كمبيوترات قوية:</strong> هدول أساس التصميم والمونتاج، لازم يكونوا بمعالجات قوية (زي Intel Core i7/i9 أو AMD Ryzen 7/9)، وذاكرة (RAM) مش أقل من 16-32 جيجا، وبطاقات شاشة خاصة وقوية (زي Nvidia RTX 3060 Ti أو أحسن، عشان شغل الفيديو والتصميم الثقيل).</div></li>
+                        <li class="flex items-center text-lg"><span class="text-2xl ml-3">🖨️</span> <div><strong>طابعات وماسحات:</strong> لازم تكون موجودة عشان تطبع الأوراق وتعمل نسخ أولية للعقود. يفضل طابعة ليزر بتعمل كل شي.</div></li>
+                        <li class="flex items-center text-lg"><span class="text-2xl ml-3">📷</span> <div><strong>كاميرات وعدة تصوير:</strong> عشان تعمل فيديوهات وصور حلوة جوا الوكالة (زي فيديوهات إعلانات، صور منتجات). بتشمل الكاميرات الكبيرة، عدسات مختلفة، عدة إضاءة، ومايكات.</div></li>
+                        <li class="flex items-center text-lg"><span class="text-2xl ml-3">✍️</span> <div><strong>لوحات رسم وتصميم:</strong> هدول ما بنستغني عنهم للمصممين عشان يضيفوا لمسة إبداعية دقيقة، زي Wacom Intuos Pro أو Cintiq.</div></li>
+                        <li class="flex items-center text-lg"><span class="text-2xl ml-3">🔊</span> <div><strong>عدة صوت:</strong> مايكات وسماعات جودتها عالية عشان تشوف الصوت صح بالفيديوهات والإعلانات المسموعة، ومعالجة صوت احترافية.</div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="operations" class="my-12">
+            <h2 class="text-3xl font-bold text-center mb-2 text-[#003f5c]">5. كيف بتمشي الشغل: من الزبون لأول إعلان</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-600">الشغل المضبوط هو اللي بيميز الوكالات الناجحة. بدها طريقة شغل واضحة وأسعار مرنة بتوازن بين قديش بدك تربح وقديش قيمة الشغل للزبون.</p>
+            
+            <div class="mb-16">
+                 <h3 class="text-2xl font-bold text-center mb-6 text-[#58508d]">مراحل الشغل المعتادة</h3>
+                 <div class="flex flex-col md:flex-row justify-center items-center gap-0 md:gap-2">
+                    <div class="flowchart-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-48"><strong>1. تفهم الزبون</strong><p class="text-sm text-gray-500">تفهم إيش بده الزبون</p></div>
+                    <div class="flowchart-arrow transform md:-rotate-90">↓</div>
+                    <div class="flowchart-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-48"><strong>2. الخطة الكبيرة</strong><p class="text-sm text-gray-500">ترتيب الخطة الإبداعية</p></div>
+                     <div class="flowchart-arrow transform md:-rotate-90">↓</div>
+                    <div class="flowchart-step bg-[#ffa600] text-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-48"><strong>3. الإبداع والشغل</strong><p class="text-sm text-gray-100">تصمم وتكتب الإعلان</p></div>
+                    <div class="flowchart-arrow transform md:-rotate-90">↓</div>
+                    <div class="flowchart-step bg-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-48"><strong>4. مراجعة وموافقة</strong><p class="text-sm text-gray-500">تاخد الضوء الأخضر</p></div>
+                    <div class="flowchart-arrow transform md:-rotate-90">↓</div>
+                    <div class="flowchart-step bg-[#003f5c] text-white p-4 rounded-lg shadow-md text-center flex flex-col justify-center items-center w-48"><strong>5. نشر الإعلان وتحسينه</strong><p class="text-sm text-gray-100">تنشر الحملة وتراقبها</p></div>
+                 </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-bold text-center mb-6 text-[#58508d]">مقارنة طرق التسعير</h3>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-center text-sm mb-4 text-gray-500">كل طريقة إلها إيجابيات وسلبيات. الإختيار بيعتمد على نوع الشغل وكيف علاقتك مع الزبون.</p>
+                    <div class="chart-container">
+                        <canvas id="pricingModelChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#003f5c] text-white text-center p-8 mt-12">
+        <p class="font-bold">هالصورة معمولة عشان تكون دليلك لتكون محترف بعالم الإعلانات.</p>
+        <p class="text-sm opacity-75 mt-2">كل الحقوق محفوظة © 2025</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const colorPalette = {
+                blue: '#003f5c',
+                purple: '#58508d',
+                pink: '#bc5090',
+                red: '#ff6361',
+                orange: '#ffa600',
+                lightGray: '#f0f4f8',
+                darkGray: '#333'
+            };
+
+            const wrapLabel = (label, maxLength) => {
+                const words = label.split(' ');
+                let lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            };
+
+            const multiLineTooltipTitle = {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            const renderCapitalChart = () => {
+                const ctx = document.getElementById('capitalChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['مصدر 1', 'مصدر 2', 'مصدر 3', 'مصدر 4', 'نصيحة عملية'],
+                        datasets: [{
+                            label: 'أقل راس مال بالجنيه المصري',
+                            data: [1000, 30000, 100, 1, 7500],
+                            backgroundColor: [
+                                colorPalette.blue,
+                                colorPalette.purple,
+                                colorPalette.pink,
+                                colorPalette.red,
+                                colorPalette.orange,
+                            ],
+                            borderColor: '#fff',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        indexAxis: 'y',
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                ...multiLineTooltipTitle.plugins.tooltip
+                            }
+                        },
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                ticks: {
+                                    callback: function(value) {
+                                        return value.toLocaleString('ar-EG') + ' ج.م';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            };
+            
+            const createRadarChart = (elementId, label, data) => {
+                const ctx = document.getElementById(elementId).getContext('2d');
+                new Chart(ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['الإبداع', 'التخطيط', 'التواصل', 'الإدارة', 'تحليل الأرقام'],
+                        datasets: [{
+                            label: label,
+                            data: data,
+                            fill: true,
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: colorPalette.red,
+                            pointBackgroundColor: colorPalette.red,
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: colorPalette.red
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                             tooltip: {
+                                ...multiLineTooltipTitle.plugins.tooltip
+                            }
+                        },
+                        scales: {
+                            r: {
+                                angleLines: {
+                                    color: '#e0e0e0'
+                                },
+                                grid: {
+                                    color: '#e0e0e0'
+                                },
+                                pointLabels: {
+                                    font: {
+                                        size: 11
+                                    },
+                                    color: colorPalette.darkGray
+                                },
+                                ticks: {
+                                    backdropColor: 'transparent',
+                                    color: 'transparent'
+                                },
+                                suggestedMin: 0,
+                                suggestedMax: 5
+                            }
+                        }
+                    }
+                });
+            };
+
+            const renderTeamCharts = () => {
+                createRadarChart('creativeDirectorChart', 'مدير الإبداع', [5, 4, 4, 5, 3]);
+                createRadarChart('accountManagerChart', 'مسؤول الزباين', [2, 4, 5, 5, 3]);
+                createRadarChart('digitalMarketerChart', 'خبير تسويق الإنترنت', [4, 4, 3, 2, 5]);
+            };
+            
+            const renderSoftwareBubbleChart = () => {
+                const ctx = document.getElementById('softwareBubbleChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bubble',
+                    data: {
+                        datasets: [{
+                            label: 'برامج التصميم',
+                            data: [{x: 20, y: 30, r: 25}],
+                            backgroundColor: colorPalette.pink,
+                        }, {
+                            label: 'برامج المونتاج',
+                            data: [{x: 40, y: 55, r: 20}],
+                            backgroundColor: colorPalette.purple,
+                        }, {
+                            label: 'إدارة المشاريع',
+                            data: [{x: 60, y: 25, r: 18}],
+                            backgroundColor: colorPalette.orange,
+                        }, {
+                            label: 'تحليل الأرقام',
+                            data: [{x: 75, y: 50, r: 15}],
+                             backgroundColor: colorPalette.blue,
+                        }, {
+                            label: 'إدارة الزباين',
+                            data: [{x: 30, y: 75, r: 16}],
+                             backgroundColor: colorPalette.red,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                             legend: {
+                                position: 'bottom',
+                             },
+                             tooltip: {
+                                ...multiLineTooltipTitle.plugins.tooltip
+                            }
+                        },
+                        scales: {
+                            x: { display: false },
+                            y: { display: false }
+                        }
+                    }
+                });
+            };
+
+            const renderPricingModelChart = () => {
+                const ctx = document.getElementById('pricingModelChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: [
+                            wrapLabel('طريقة الاشتراكات/الدفع الشهري', 16), 
+                            wrapLabel('طريقة الدفع حسب المشروع', 16), 
+                            wrapLabel('طريقة الدفع حسب النتائج', 16)
+                        ],
+                        datasets: [
+                            {
+                                label: 'ثبات المصاري',
+                                data: [9, 6, 2],
+                                backgroundColor: colorPalette.blue,
+                            },
+                            {
+                                label: 'إمكانية الربح',
+                                data: [5, 7, 10],
+                                backgroundColor: colorPalette.pink,
+                            },
+                            {
+                                label: 'الخطر على الوكالة',
+                                data: [2, 4, 9],
+                                backgroundColor: colorPalette.red,
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        indexAxis: 'y',
+                        scales: {
+                            x: {
+                                stacked: true,
+                                max: 12
+                            },
+                            y: {
+                                stacked: true
+                            }
+                        },
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'تقييم طرق التسعير (من 10)'
+                            },
+                             tooltip: {
+                                ...multiLineTooltipTitle.plugins.tooltip
+                            }
+                        }
+                    }
+                });
+            };
+
+            renderCapitalChart();
+            renderTeamCharts();
+            renderSoftwareBubbleChart();
+            renderPricingModelChart();
+
+        });
+    </script>
+</body>
+</html>
